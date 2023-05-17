@@ -1,28 +1,26 @@
 import './App.css';
 
-import { Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import BookmarkPage from "./pages/Bookmark-page";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import MainPage from "./pages/Main-page";
-import ProductListPage from "./pages/ProductList-page";
+import BookmarkPage from "../src/pages/Bookmark-page";
+import Footer from "../src/components/Footer";
+import Header from "../src/components/Header";
+import MainPage from "../src/pages/Main-page";
+import ProductListPage from "../src/pages/ProductList-page";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <BrowserRouter>
+    <div>
       <Header/>
-      <main className="main">
         <Routes>
           <Route path="/" element={<MainPage/>}/>
           <Route path="/products" element={<BookmarkPage/>}/>
           <Route path="/bookmark" element={<ProductListPage/>}/>
         </Routes>
-      </main>
-      </Router>
       <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 

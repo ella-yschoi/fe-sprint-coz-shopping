@@ -8,10 +8,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/logo.png";
 
 function Header() {
-    const [dropdown, setDropdown] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false); 
     
     const handleDropdown = () => {
-        setDropdown(!dropdown);
+        setDropdownOpen(!dropdownOpen);
     };
     
     return (
@@ -20,14 +20,16 @@ function Header() {
             <Link to="/">
                 <span className="logo">
                     <img src={logo} alt ="logo"/>
-                    <h2>COZ Shopping</h2>
+                </span>
+                <span className="logo-text">
+                    COZ Shopping
                 </span>
             </Link>
             <span className="hamburger" onClick = {handleDropdown}>
+                <MenuIcon />
             </span>
-            <MenuIcon />
         </header>
-        {dropdown && <Dropdown/>}
+        {dropdownOpen && <Dropdown />}
         </>
     );
 }

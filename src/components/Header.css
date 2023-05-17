@@ -12,11 +12,11 @@
 }
 
 .logo {
-    display: flex;
+    margin-right: auto;
 }
 
-h2 {
-    margin-left: 12px;
+.logo-text {
+    margin-right: auto;
 }
 
 .hamburger {

@@ -1,8 +1,8 @@
-.dropDown {
+.dropdown {
     position: fixed;
     width: 200px;
     height: 130px;
-    background: #eaeaea;
+    background: #ffffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -24,12 +24,12 @@
     color: #ffffff;
 }
 
-.dropDown:after {
+.dropdown:after {
     content: "";
     position: absolute;
     border-style: solid;
     border-width: 0 13px 19px;
-    border-color: #eaeaea transparent;
+    border-color: #ffffff transparent;
     display: block;
     width: 0;
     z-index: 9999;
