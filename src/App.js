@@ -1,12 +1,26 @@
 import './App.css';
 
-import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import BookmarkPage from "../src/pages/Bookmark-page";
+import Footer from "../src/components/Footer";
+import Header from "../src/components/Header";
+import MainPage from "../src/pages/Main-page";
+import ProductListPage from "../src/pages/ProductList-page";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+    <div>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/products" element={<BookmarkPage/>}/>
+          <Route path="/bookmark" element={<ProductListPage/>}/>
+        </Routes>
       <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 
