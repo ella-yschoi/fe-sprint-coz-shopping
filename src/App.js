@@ -7,6 +7,7 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import MainPage from "../src/pages/Main-page";
 import ProductListPage from "../src/pages/ProductList-page";
+import React from "react";
 
 function App() {
   return (
