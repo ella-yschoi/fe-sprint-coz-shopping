@@ -17,13 +17,13 @@ function Header() {
     return (
         <>
         <header className="header">
-            <Link to="/">
-                <span className="logo">
+            <Link to="/" className="logo">
+                <span className="logo-img">
                     <img src={logo} alt ="logo"/>
                 </span>
-                <span className="logo-text">
+                <h2 className="logo-text">
                     COZ Shopping
-                </span>
+                </h2>
             </Link>
             <span className="hamburger" onClick = {handleDropdown}>
                 <MenuIcon />
