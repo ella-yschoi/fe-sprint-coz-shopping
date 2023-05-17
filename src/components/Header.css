@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 1.25rem 3.125rem;
     background: #fefefe;
     box-shadow: 0 0.1rem 0.3rem 0.3rem #dcdcdc;
     z-index: 100;
@@ -26,8 +26,7 @@
 }
 
 .hamburger {
-    margin-left: auto;
     cursor: pointer;
-    position: relative; 
+    position: relative;
+    z-index: 999;
 }
-
